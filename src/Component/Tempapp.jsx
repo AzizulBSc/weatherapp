@@ -29,13 +29,13 @@ useEffect (()=>{
         <div className = "box">
             <br/>
             <div className="inputData">
-            <input type="search" className="inputField" value={search} onChange={(event)=>{
+           <input type="search" placeholder="Enter City Name..." className="inputField" onChange={(event)=>{
              setSearch(event.target.value)
             }} />
         
         </div>
         {!city?(<p className="errorMsg">No Data Found</p>):( 
-        <div>
+      <div>
         <div className="info">
             <h2 className=""><i className="fas fa-street-view"></i>{search} ({country})</h2>
             <h2 className="">{temp} °Cel</h2>
@@ -46,7 +46,11 @@ useEffect (()=>{
         <div className="wave -three"></div>
         </div>
         )}
+        
         </div>
+        
+        
+        <div className="tempmin_max">Azizul Hoque</div>
         </>
     )
 }
